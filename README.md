@@ -1,3 +1,17 @@
+# Start Server
+`cd node-postgres`<br />
+`node index.js`
+
+# Docker and Kubernetes commands
+`docker build -t react-docker-k8s .`<br />
+`docker run -d -p 3002:80 react-docker-k8s:latest`<br />
+run on local host http://localhost:3002 <br /> 
+`kubectl apply -f deployment.yml` <br />
+`kubectl port-forward deployment/react-docker-k8s 3002:80`
+
+*referred to https://www.linkedin.com/pulse/deploy-react-app-kubernetes-using-docker-maksood-mohiuddin
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
