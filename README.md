@@ -1,13 +1,13 @@
 # Start Server
-`cd node-postgres`<br />
-`node index.js`
+1. `cd node-postgres`<br />
+2. `node index.js`
 
 # Docker and Kubernetes commands
-`docker build -t react-docker-k8s .`<br />
-`docker run -d -p 3002:80 react-docker-k8s:latest`<br />
-run on local host http://localhost:3002 <br /> 
-`kubectl apply -f deployment.yml` <br />
-`kubectl port-forward deployment/react-docker-k8s 3002:80`
+1. `docker build -t react-docker-k8s .`<br />
+2. `docker run -d -p 3002:80 react-docker-k8s:latest`<br />
+3. run on local host http://localhost:3002 <br /> 
+4. `kubectl apply -f deployment.yml` <br />
+5. `kubectl port-forward deployment/react-docker-k8s 3002:80`
 
 *referred to https://www.linkedin.com/pulse/deploy-react-app-kubernetes-using-docker-maksood-mohiuddin
 
